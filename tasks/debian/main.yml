@@ -1,0 +1,6 @@
+---
+- name: debian | add the new relic respository key
+  apt_key: url={{apt_key_url}} state=present
+
+- name: debian | add the new relic respository
+  apt_repository: repo='{{apt_repository_repo}}' state=present

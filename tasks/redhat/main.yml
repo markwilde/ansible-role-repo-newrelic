@@ -1,0 +1,3 @@
+---
+- name: redhat | add the new relic respository
+  yum: name={{yum_respository}} state=present
